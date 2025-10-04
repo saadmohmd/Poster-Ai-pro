@@ -1,10 +1,6 @@
 import { GoogleGenAI, GenerateContentResponse, Part, Modality } from "@google/genai";
 
-const API_KEY = process.env.API_KEY;
-
-if (!API_KEY) {
-    throw new Error("API_KEY environment variable not set");
-}
+const API_KEY = "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";
 
 const ai = new GoogleGenAI({ apiKey: API_KEY });
 
